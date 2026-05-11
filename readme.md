@@ -1,6 +1,6 @@
-# 🏴‍☠️ Rust File Carver (Luffy Recovery)
+# Learning Project Rust file carver (recovering deleted data)
 
-This is a project I built to learn how data recovery actually works. I used it to pull a deleted JPEG of Luffy out of a 1GB virtual disk on my windows machine lol (.vhd).
+This is a project I built to learn how data recovery actually works. I used it to pull a deleted JPEG of Luffy  out of a 1GB virtual disk on my windows machine lol (.vhd).
 
 ## What it does
 Most programs load a whole file into RAM, but that's impossible if the file is 100GB. This tool uses a **BufReader** to look at the disk in small 4KB chunks. It acts like a "State Machine" to find the "DNA" of a JPEG. It looks for a signature start and end of a jpeg format file. Its very simple.
